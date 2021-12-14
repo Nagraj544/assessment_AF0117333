@@ -7,6 +7,6 @@ public class Testdaemon extends Thread {
 public static void main(String args[]) {
 	Testdaemon td=new Testdaemon();
 	td.start();
-	setDaemon(true);
+	td.setDaemon(true);
 }
 }
