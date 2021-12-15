@@ -1,0 +1,22 @@
+package Assignment15;
+
+import java.util.Date;
+import java.util.Scanner;
+
+public class DateTest{
+    @SuppressWarnings("deprecation")
+	public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        Date dt = new Date(requestInput("Enter month: ", sc),
+                           requestInput("Enter day: ", sc),
+                           requestInput("Enter year: ", sc));
+
+        dt.displayDate();
+
+    }
+    public static int requestInput(String s, Scanner sc){
+        System.out.print(s);
+        return sc.nextInt();
+    }
+}
